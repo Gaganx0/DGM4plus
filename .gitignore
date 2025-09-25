@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+.venv/
+.env
+.envrc
+
+# Data & results (keep space down)
+data/*/
+!data/README.md
+results/
+checkpoints/
+*.pt
+*.ckpt
+*.safetensors
+
+# TeX build
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz
