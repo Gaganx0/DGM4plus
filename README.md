@@ -1,4 +1,4 @@
-# Datasetgen.py
+# DGM4plus Generation
 
 This repository provides the script used to generate a **DGM⁴-style synthetic dataset** with **absurd backdrops** and **news-style captions**.  
 It extends HAMMER/DGM⁴ methodology by creating **foreground–background mismatches**, with optional **text attribute (TA)** and **text swap (TS)** manipulations.
