@@ -2,7 +2,6 @@
 title: Home
 ---
 
-# DGM⁴+ Challenge on Global Scene Inconsistency Detection
 ### PP-MisDet Workshop @ CVPR 2026
 
 DGM⁴+ is a benchmark and challenge for detecting **semantic and narrative inconsistencies** in image–caption pairs, with a focus on **global scene plausibility** and multimodal misinformation.
