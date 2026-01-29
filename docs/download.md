@@ -2,27 +2,81 @@
 title: Download
 ---
 
-# Download
+<p align="center">
+  <a href="index.md"><b>Home</b></a> |
+  <a href="dataset.md"><b>Dataset</b></a> |
+  <a href="challenge.md"><b>Challenge</b></a> |
+  <a href="download.md"><b>Download</b></a> |
+  <a href="baselines.md"><b>Baselines</b></a> |
+  <a href="faq.md"><b>FAQ</b></a>
+</p>
 
-## What we provide
-- dataset splits (train/val/test)
-- metadata (JSONL/JSON)
-- optional generation scripts (this repo)
+<hr>
 
-## Dataset hosting (recommended)
-Do **not** store all images directly in GitHub (size limits).
-Instead use one of:
-- Hugging Face Datasets (best for public ML datasets)
-- Kaggle Dataset
-- Google Drive (temporary / small-scale)
-- An institutional host
+# Dataset Download
 
-## Links
-- Dataset: (add link)
-- Splits: (add link)
-- Metadata schema: (add link)
+---
 
-## Integrity
-If possible, include:
-- checksums (SHA256) for archives
-- a version tag (v1.0, v1.1, etc.)
+## Official Release
+
+The DGM⁴+ dataset is available at:
+
+https://drive.google.com/file/d/1kXNqljyJ7EHmHnRn3ORPgLjawnJ63YHL/view
+
+This includes:
+
+- Image files
+- Caption metadata
+- Labels
+- Split information
+- Tokenization resources
+
+---
+
+## Data Format
+
+Each sample contains:
+
+- Unique sample ID
+- Image file or URL
+- Caption text
+- Authenticity label
+- Manipulation type
+- Tokenization metadata
+
+Metadata is provided in JSON/JSONL format.
+
+---
+
+## Versioning
+
+Releases follow semantic versioning:
+
+- v1.0 — Initial release
+- v1.x — Minor corrections
+- v2.x — Major extensions
+
+Version tags are provided in the repository.
+
+---
+
+## License
+
+The dataset is released under:
+
+**Creative Commons Attribution–NonCommercial 4.0 (CC BY-NC 4.0)**
+
+Commercial use is prohibited.
+
+---
+
+## Terms of Use
+
+Users must agree to:
+
+- Use data for research only
+- Not redistribute
+- Not generate misinformation
+- Cite the dataset
+
+Violation may result in access revocation.

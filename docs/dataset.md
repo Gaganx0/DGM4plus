@@ -1,29 +1,161 @@
 ---
-title: Dataset Details
+title: Dataset
+---
+<p align="center">
+  <a href="index.md"><b>Home</b></a> |
+  <a href="dataset.md"><b>Dataset</b></a> |
+  <a href="challenge.md"><b>Challenge</b></a> |
+  <a href="download.md"><b>Download</b></a> |
+  <a href="baselines.md"><b>Baselines</b></a> |
+  <a href="faq.md"><b>FAQ</b></a>
+</p>
+
+<hr>
+
+# The DGM⁴+ Dataset
+
+## Overview
+
+DGM⁴+ is an extension of the DGM⁴ benchmark designed to support research on **global scene inconsistency** in multimodal misinformation.
+
+Unlike traditional datasets that focus on local visual artifacts, DGM⁴+ emphasizes **semantic plausibility between foreground, background, and textual narratives**.
+
+<p align="center">
+  <img src="assets/teaser.png" width="85%">
+</p>
+
+*Figure 1: Examples of global scene inconsistency in DGM⁴+.*
+
 ---
 
-# Dataset Details (DGM⁴+)
+## Global Scene Inconsistency
 
-DGM⁴+ extends DGM⁴-style synthetic generation by creating **foreground–background (FG–BG) mismatches** with optional text attribute (TA) and text swap (TS) manipulations. :contentReference[oaicite:3]{index=3}
+In DGM⁴+, manipulation is introduced at the **scene level**.
 
-## Manipulation types in DGM⁴+
-DGM⁴+ introduces global inconsistency and hybrids:
+Typical inconsistencies include:
 
-- **FG–BG (origin/generated)**: global mismatch in the image background  
-- **FG–BG + TA (manipulation/text_attribute)**: global mismatch + affect/attribute shift in text  
-- **FG–BG + TS (manipulation/text_swap)**: global mismatch + irrelevant/swapped text span  
+- Realistic people placed in physically impossible environments
+- Foreground–background mismatches
+- Implausible social or geopolitical contexts
+- Contradictory visual–textual narratives
 
-These correspond to the output directories described in this repository. :contentReference[oaicite:4]{index=4}
+These cases are challenging for models relying only on local cues.
 
-## Generation constraints (quality control)
-The pipeline includes:
-- face gating (e.g., enforce 1–3 faces)
-- deduplication using pHash
-- optional OCR-based text scrubbing
-- DGM⁴-style resize/crop to 400×256 :contentReference[oaicite:5]{index=5}
+---
 
-## Intended use
-DGM⁴+ is designed to stress-test multimodal misinformation detectors on **scene-level plausibility reasoning** rather than only local artifact detection.
+## Manipulation Taxonomy
+
+<p align="center">
+  <img src="assets/taxonomy.png" width="75%">
+</p>
+
+*Figure 2: Taxonomy of manipulations in DGM⁴+.*
+
+DGM⁴+ introduces three primary categories:
+
+### 1. FG–BG (Foreground–Background Mismatch)
+Image-only manipulation where the foreground is inserted into an implausible background.
+
+### 2. FG–BG + Text Attribute (TA)
+Global scene inconsistency combined with sentiment, stance, or affect changes in captions.
+
+### 3. FG–BG + Text Swap (TS)
+Global mismatch combined with irrelevant or misleading caption replacement.
+
+These extend the original DGM⁴ local manipulations.
+
+---
+
+## Dataset Composition
+
+<p align="center">
+  <img src="assets/examples_grid.png" width="90%">
+</p>
+
+*Figure 3: Representative samples across manipulation categories.*
+
+### Size
+
+- Total new samples: **~5,000**
+- Expansion over DGM⁴: **+2.1%**
+
+### Distribution
+
+| Category        | Samples |
+|-----------------|----------|
+| FG–BG           | 2,000    |
+| FG–BG + TA      | 1,500    |
+| FG–BG + TS      | 1,500    |
+
+### Captions
+
+- News-style headlines
+- Length: 10–25 tokens
+- Human-readable and semantically rich
+
+---
+
+## Data Generation Pipeline
+
+<p align="center">
+  <img src="assets/pipeline.png" width="85%">
+</p>
+
+*Figure 4: Dataset generation pipeline.*
+
+The dataset is generated using a multi-stage pipeline:
+
+1. Foreground extraction
+2. Background retrieval
+3. Controlled composition
+4. Caption rewriting
+5. Quality filtering
+6. Deduplication
+
+---
+
+## Quality Control
+
+To ensure realism and diversity:
+
+- Face-count constraints (1–3 faces)
+- Perceptual hash deduplication
+- OCR-based text removal
+- Resolution normalization (400×256)
+
+These steps reduce trivial detection shortcuts.
+
+---
+
+## Dataset Splits
+
+| Split       | Availability | Purpose                  |
+|-------------|--------------|--------------------------|
+| Training    | Public       | Model development        |
+| Validation  | Public       | Hyperparameter tuning    |
+| Test        | Hidden       | Leaderboard evaluation   |
+
+License: **CC BY-NC 4.0**
+
+---
+
+## Intended Use
+
+DGM⁴+ is intended for:
+
+- Multimodal misinformation detection
+- Cross-modal reasoning
+- Explainable AI research
+- Robustness evaluation
+
+---
 
 ## Citation
-Add your BibTeX here (use the one from your paper).
+
+```bibtex
+@article{singh2025dgm4plus,
+  title   = {DGM$^4$+: Dataset Extension for Global Scene Inconsistency},
+  author  = {Singh, Gagandeep and Amarsinghe, Samudi and Singh, Priyanka and Li, Xue},
+  journal = {arXiv preprint arXiv:2509.26047},
+  year    = {2025}
+}

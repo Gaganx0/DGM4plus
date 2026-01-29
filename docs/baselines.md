@@ -2,17 +2,80 @@
 title: Baselines
 ---
 
-# Baselines
+<p align="center">
+  <a href="index.md"><b>Home</b></a> |
+  <a href="dataset.md"><b>Dataset</b></a> |
+  <a href="challenge.md"><b>Challenge</b></a> |
+  <a href="download.md"><b>Download</b></a> |
+  <a href="baselines.md"><b>Baselines</b></a> |
+  <a href="faq.md"><b>FAQ</b></a>
+</p>
 
-We recommend including at least 1–2 runnable baselines so participants can onboard quickly:
+<hr>
 
-## Baseline ideas
-- CLIP-style image–text similarity as a global consistency signal
-- Vision-only features for FG vs BG mismatch scoring
-- Multimodal LLM prompting (binary plausibility)
-- Any local manipulation detector baseline (to show failure modes on FG–BG)
+# Baseline Models
 
-## What to include
-- code links
-- expected numbers (even approximate)
-- runtime + hardware notes
+---
+
+To facilitate rapid onboarding, we recommend the following baselines.
+
+---
+
+## Vision–Language Similarity Baseline
+
+### CLIP / SigLIP
+
+Use cosine similarity between image and caption embeddings.
+
+Purpose:
+- Detect global semantic mismatch
+- Provide fast initial benchmark
+
+---
+
+## Vision-Only Baseline
+
+### DINOv2 Features
+
+Compare foreground and background embeddings.
+
+Purpose:
+- Measure visual inconsistency
+- Analyze scene composition
+
+---
+
+## Multimodal Reasoning Baseline
+
+### Multimodal LLM (Qwen2-VL)
+
+Prompt model with:
+
+"Is this image–caption pair plausible?"
+
+Purpose:
+- Test reasoning ability
+- Establish upper-bound reference
+
+---
+
+## Manipulation-Aware Baseline
+
+### HAMMER
+
+Evaluate local manipulation detection failure modes on FG–BG data.
+
+Purpose:
+- Study out-of-distribution behavior
+
+---
+
+## Reporting Guidelines
+
+Baseline reports should include:
+
+- Hardware used
+- Inference time
+- Training data
+- Hyperparameters
+- Failure cases

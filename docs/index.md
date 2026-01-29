@@ -1,32 +1,46 @@
 ---
-title: DGM⁴+ Dataset (Challenge Benchmark)
+title: DGM⁴+ Challenge
+---
+<p align="center">
+  <a href="index.md"><b>Home</b></a> |
+  <a href="dataset.md"><b>Dataset</b></a> |
+  <a href="challenge.md"><b>Challenge</b></a> |
+  <a href="download.md"><b>Download</b></a> |
+  <a href="baselines.md"><b>Baselines</b></a> |
+  <a href="faq.md"><b>FAQ</b></a>
+</p>
+
+<hr>
+
+
+
+# DGM⁴+ Challenge on Global Scene Inconsistency Detection
+### PP-MisDet Workshop @ CVPR 2026
+
+DGM⁴+ is a benchmark and challenge for detecting **semantic and narrative inconsistencies** in image–caption pairs, with a focus on **global scene plausibility** and multimodal misinformation.
+
 ---
 
-# DGM⁴+ Challenge Dataset: Global Scene Inconsistency Detection
+## Motivation
 
-DGM⁴+ is an extension of DGM⁴ designed for **global scene inconsistency**: cases where a realistic foreground is placed in an implausible or absurd background, often paired with caption manipulations to mimic real multimodal misinformation. :contentReference[oaicite:1]{index=1}
+Modern misinformation increasingly relies on **contextual manipulation**, where realistic foregrounds are combined with misleading backgrounds and deceptive captions.
 
-## What makes DGM⁴+ different
-Most detectors focus on **local artifacts** (e.g., face edits, local compositing cues). DGM⁴+ targets **scene-level plausibility** and **narrative consistency**: the foreground may look photorealistic, but the background context breaks semantics.
+DGM⁴+ moves beyond low-level artifact detection and emphasizes **scene-level reasoning and narrative coherence**.
 
-## Challenge task
-Given an image–caption pair, participants predict whether it is **semantically consistent**.
+---
 
-### Optional (encouraged): grounding/explanations
-Participants are encouraged to show:
-- image regions that indicate inconsistency (often background evidence)
-- caption spans that drive the decision  
-This is **not scored**, but can be showcased in workshop presentations.
+## Main Sections
 
-## Pages
-- **[Dataset](dataset.md)**
-- **[Download](download.md)**
-- **[Evaluation](evaluation.md)**
-- **[Baselines](baselines.md)**
-- **[FAQ](faq.md)**
+- 📊 **[Dataset](dataset.md)** — Dataset design, generation, and statistics  
+- 🏁 **[Challenge](challenge.md)** — Tasks, submission, evaluation, timeline  
+- 📥 **[Download](download.md)** — Data access  
+- 📈 **[Baselines](baselines.md)** — Reference models  
+- ❓ **[FAQ](faq.md)** — Common questions
 
-## Repository
-This repo also includes the **generation pipeline** for DGM⁴+-style FG–BG mismatches and caption manipulations. :contentReference[oaicite:2]{index=2}
+---
 
 ## Reference
-Paper: https://arxiv.org/html/2509.26047v1
+
+Paper:  
+**DGM⁴+: Dataset Extension for Global Scene Inconsistency Detection**  
+https://arxiv.org/abs/2509.26047
