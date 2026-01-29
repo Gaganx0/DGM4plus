@@ -15,7 +15,7 @@ Unlike traditional datasets that focus on local visual artifacts, DGM⁴+ emphas
   <img src="assets/teaser.jpg" width="85%">
 </p>
 
-*Figure 1: Examples of global scene inconsistency in DGM⁴+.*
+*Figure 1: Example of global scene inconsistency in DGM⁴+.*
 
 ---
 
@@ -59,13 +59,14 @@ These extend the original DGM⁴ local manipulations.
 
 ## Dataset Composition
 
-<p align="center">
-  <img src="assets/examples_grid.png" width="90%">
-</p>
-
-*Figure 3: Representative samples across manipulation categories.*
+Here we outline the dataset build
 
 ### Size
+<p align="center">
+  <img src="assets/dataset-types.png" width="85%">
+</p>
+
+*Figure 4: Dataset statistics.*
 
 - Total new samples: **~5,000**
 - Expansion over DGM⁴: **+2.1%**
@@ -86,13 +87,7 @@ These extend the original DGM⁴ local manipulations.
 
 ---
 
-## Data Generation Pipeline and statistics
-
-<p align="center">
-  <img src="assets/dataset-types.png" width="85%">
-</p>
-
-*Figure 4: Dataset statistics.*
+## Data Generation Pipeline
 
 The dataset is generated using a multi-stage pipeline:
 
