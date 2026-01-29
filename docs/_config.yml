@@ -12,3 +12,8 @@ header_pages:
   - evaluation.md
   - baselines.md
   - faq.md
+
+include:
+  - assets/main.css
+sass:
+  style: compressed

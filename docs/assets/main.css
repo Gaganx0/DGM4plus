@@ -1,0 +1,28 @@
+/* Remove the top-left site title link */
+.site-title {
+  display: none !important;
+}
+
+/* Center the top navigation bar */
+.site-nav {
+  float: none !important;
+  text-align: center !important;
+}
+
+/* Center the navigation links */
+.site-nav .page-link {
+  float: none !important;
+  display: inline-block !important;
+  margin: 0 12px !important;
+}
+
+/* Center the header wrapper */
+.site-header .wrapper {
+  text-align: center !important;
+}
+
+/* Reduce header padding */
+.site-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
