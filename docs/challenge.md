@@ -3,7 +3,7 @@ title: Challenge
 ---
 
 # DGM⁴+ Challenge on Global Scene Inconsistency Detection
-## PP-MisDet Workshop @ CVPR 2026
+
 
 ---
 

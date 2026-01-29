@@ -1,28 +1,116 @@
-/* Remove the top-left site title link */
+/* ====== Global typography ====== */
+body {
+  font-size: 17px;
+  line-height: 1.65;
+  letter-spacing: 0.1px;
+}
+
+/* Narrower and more “paper-like” line length */
+.wrapper {
+  max-width: 980px !important;
+}
+
+/* Headings: smaller, tighter, more modern */
+h1 {
+  font-size: 2.0rem !important;
+  letter-spacing: -0.3px;
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+h2 {
+  font-size: 1.35rem !important;
+  margin-top: 1.6rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+h3 {
+  font-size: 1.10rem !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Reduce the “giant title” effect Minima adds */
+.post-title, .page-heading {
+  font-size: 2.0rem !important;
+}
+
+/* ====== Header / Nav redesign ====== */
+.site-header {
+  border-top: 0 !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  padding: 14px 0 !important;
+}
+
+/* Remove the awkward empty site-title space */
 .site-title {
   display: none !important;
 }
 
-/* Center the top navigation bar */
+/* Center nav */
 .site-nav {
   float: none !important;
   text-align: center !important;
+  line-height: 1.2 !important;
 }
 
-/* Center the navigation links */
+/* Make nav look like tabs */
 .site-nav .page-link {
   float: none !important;
   display: inline-block !important;
-  margin: 0 12px !important;
+  margin: 0 10px !important;
+  padding: 8px 10px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
 }
 
-/* Center the header wrapper */
-.site-header .wrapper {
-  text-align: center !important;
+/* Hover effect */
+.site-nav .page-link:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
-/* Reduce header padding */
-.site-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* ====== Content spacing ====== */
+.page-content {
+  padding: 26px 0 !important;
+}
+
+/* ====== Images: global sane defaults ====== */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 12px;
+}
+
+/* Any centered image blocks should not exceed a nice width */
+figure, .img-wrap {
+  margin: 18px auto !important;
+  max-width: 820px;
+}
+
+/* Reduce “giant image” issue when you use width="90%" */
+p[align="center"] img {
+  width: 78% !important;
+  max-width: 820px !important;
+}
+
+/* Captions */
+em {
+  color: #555;
+}
+
+/* Tables: nicer */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+}
+th, td {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 8px;
+  text-align: left;
+}
+th {
+  font-weight: 700;
 }
