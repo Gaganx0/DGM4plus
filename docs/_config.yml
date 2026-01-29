@@ -1,4 +1,14 @@
 title: DGM⁴+ Challenge
-description: Global Scene Inconsistency Detection | CVPR 2026
+description: Global Scene Inconsistency Detection | PP-MisDet @ CVPR 2026
 theme: minima
 markdown: kramdown
+
+# This controls the top navigation order in the Minima theme
+header_pages:
+  - index.md
+  - dataset.md
+  - challenge.md
+  - download.md
+  - evaluation.md
+  - baselines.md
+  - faq.md
