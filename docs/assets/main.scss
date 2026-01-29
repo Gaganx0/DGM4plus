@@ -1,0 +1,33 @@
+---
+---
+{
+@import "minima";
+/* 1) Remove the top-left site title link ("DGM4+ Challenge") */
+.site-title {
+  display: none !important;
+}
+
+/* 2) Center the top ribbon (tabs) */
+.site-nav {
+  float: none !important;
+  text-align: center;
+}
+
+/* Make links behave like centered inline tabs */
+.site-nav .page-link {
+  float: none !important;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Optional: center the whole header row visually */
+.site-header .wrapper {
+  text-align: center;
+}
+
+/* Optional: reduce excessive header spacing a bit */
+.site-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+}

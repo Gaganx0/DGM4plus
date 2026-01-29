@@ -12,7 +12,7 @@ DGM⁴+ is an extension of the DGM⁴ benchmark designed to support research on 
 Unlike traditional datasets that focus on local visual artifacts, DGM⁴+ emphasizes **semantic plausibility between foreground, background, and textual narratives**.
 
 <p align="center">
-  <img src="assets/teaser.png" width="85%">
+  <img src="assets/teaser.jpg" width="85%">
 </p>
 
 *Figure 1: Examples of global scene inconsistency in DGM⁴+.*
@@ -37,7 +37,7 @@ These cases are challenging for models relying only on local cues.
 ## Manipulation Taxonomy
 
 <p align="center">
-  <img src="assets/taxonomy.png" width="75%">
+  <img src="assets/dataset-types-examples.png" width="75%">
 </p>
 
 *Figure 2: Taxonomy of manipulations in DGM⁴+.*
@@ -86,13 +86,13 @@ These extend the original DGM⁴ local manipulations.
 
 ---
 
-## Data Generation Pipeline
+## Data Generation Pipeline and statistics
 
 <p align="center">
-  <img src="assets/pipeline.png" width="85%">
+  <img src="assets/dataset-types.png" width="85%">
 </p>
 
-*Figure 4: Dataset generation pipeline.*
+*Figure 4: Dataset statistics.*
 
 The dataset is generated using a multi-stage pipeline:
 
