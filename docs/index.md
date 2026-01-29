@@ -1,5 +1,5 @@
 ---
-title: DGM⁴+ Challenge
+title: Home
 ---
 
 # DGM⁴+ Challenge on Global Scene Inconsistency Detection

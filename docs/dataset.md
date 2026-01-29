@@ -66,7 +66,7 @@ Here we outline the dataset build
   <img src="assets/dataset-types.png" width="85%">
 </p>
 
-*Figure 4: Dataset statistics.*
+*Figure 3: Dataset statistics.*
 
 - Total new samples: **~5,000**
 - Expansion over DGM⁴: **+2.1%**
