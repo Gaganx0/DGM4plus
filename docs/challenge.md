@@ -186,10 +186,10 @@ This weighting prioritizes reliable detection of semantic inconsistency while re
 |------|-----------|
 | Jan 10, 2026 | Challenge launch |
 | Mar 05, 2026 | Submission portal opens |
-| Mar 25, 2026 | Test set release |
-| Apr 05, 2026 | Final submissions due |
-| Apr 15, 2026 | Results announced |
-| Jun 04, 2026 | On-site presentations and awards |
+| May 10, 2026 | Test set release |
+| May 20, 2026 | Final submissions due |
+| May 30, 2026 | Results announced |
+| Jun 03, 2026 | On-site presentations and awards |
 
 ---
 
