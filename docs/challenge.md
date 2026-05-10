@@ -15,6 +15,7 @@ Modern multimodal misinformation increasingly relies on **contextual manipulatio
 
 This challenge provides a standardized benchmark for evaluating models that jointly reason over images and text to identify misleading content.
 
+Link to test files: https://drive.google.com/file/d/1uiTRM9k0MIBs3Netahc0UEKJ8pRLfV8p/view?usp=sharing
 ---
 
 ## Task Description
